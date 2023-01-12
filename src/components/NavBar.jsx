@@ -77,7 +77,7 @@ function NavBar() {
                 sx={{
                   color: "white",
                   "&:hover": {
-                    transition: "0.35s",
+                    // transition: "0.35s",
                     color: "#19bc8b",
                   },
                 }}
@@ -119,7 +119,7 @@ function NavBar() {
                 sx={{
                   color: "white",
                   "&:hover": {
-                    transition: "0.35s",
+                    // transition: "0.35s",
                     color: "#19bc8b",
                   },
                 }}

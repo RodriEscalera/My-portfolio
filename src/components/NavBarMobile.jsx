@@ -56,7 +56,7 @@ function NavBarMobile({ appRef }) {
               fontSize: "2rem",
 
               "&:active": {
-                transition: "0.35s",
+                // transition: "0.35s",
                 color: "#19bc8b",
               },
             }}

@@ -63,7 +63,6 @@ function AboutMe() {
                   height: "20rem",
                   borderRadius: "50rem",
                   marginTop: "0.2rem",
-                  transition: "3s",
                 }}
                 src={picture}
                 alt="me"
