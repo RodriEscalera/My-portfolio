@@ -35,13 +35,19 @@ function Home() {
       }}
     >
       <Typography
-        sx={{ color: "white", textAlign: "center" }}
+        sx={{
+          color: "white",
+          textAlign: "center",
+        }}
         variant={isActive === false ? "h1" : "h2"}
       >
         RODRIGO ESCALERA
       </Typography>
       <Typography
-        sx={{ color: "white", textAlign: "center" }}
+        sx={{
+          color: "white",
+          textAlign: "center",
+        }}
         variant={isActive === false ? "h3" : "h4"}
       >
         FULLSTACK DEVELOPER

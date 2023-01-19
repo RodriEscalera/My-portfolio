@@ -2,6 +2,10 @@ import React from "react";
 import { Typography, useMediaQuery } from "@mui/material";
 import { Grid } from "@mui/material";
 import { motion } from "framer-motion";
+import TheMovieBank from "../projects pics/TheMovieBank.png";
+import BrokenOffice from "../projects pics/BrokenOffice.png";
+import Divino from "../projects pics/Divino.PNG";
+
 function Projects() {
   const fiveHundredPx = useMediaQuery("(max-width:550px)");
   const fourHundredPx = useMediaQuery("(max-width:412px)");
@@ -25,36 +29,39 @@ function Projects() {
           md={12}
           lg={6}
         >
-          <div
-            className="glow-on-hover"
-            style={{
-              display: "flex",
-              justifyContent: "end",
-              marginTop: "5rem",
-              alignItems: "end",
-              height:
-                fiveHundredPx === true && fourHundredPx === false
-                  ? "12rem"
-                  : fourHundredPx
-                  ? "10rem"
-                  : "15rem",
-              width:
-                fiveHundredPx === true && fourHundredPx === false
-                  ? "24rem"
-                  : fourHundredPx
-                  ? "20rem"
-                  : "30rem",
-              backgroundColor: "white",
-              borderRadius: "1rem",
-            }}
+          <a
+            href="https://github.com/Rodriix99/THE-MOVIE-BANK-FRONT"
+            target="_blank"
           >
-            <Typography
-              variant={fourHundredPx ? "h5" : "h4"}
-              sx={{ marginRight: "1rem" }}
+            <div
+              className="glow-on-hover"
+              style={{
+                display: "flex",
+                justifyContent: "end",
+                marginTop: "5rem",
+                alignItems: "end",
+                height:
+                  fiveHundredPx === true && fourHundredPx === false
+                    ? "12rem"
+                    : fourHundredPx
+                    ? "10rem"
+                    : "15rem",
+                width:
+                  fiveHundredPx === true && fourHundredPx === false
+                    ? "24rem"
+                    : fourHundredPx
+                    ? "20rem"
+                    : "30rem",
+                backgroundColor: "white",
+                borderRadius: "1rem",
+              }}
             >
-              The Movie Bank
-            </Typography>
-          </div>
+              <img
+                src={TheMovieBank}
+                style={{ width: "100%", overflow: "hidden" }}
+              />
+            </div>
+          </a>
         </Grid>
 
         <Grid
@@ -65,36 +72,39 @@ function Projects() {
           md={12}
           lg={6}
         >
-          <div
-            className="glow-on-hover"
-            style={{
-              display: "flex",
-              justifyContent: "end",
-              marginTop: "5rem",
-              alignItems: "end",
-              height:
-                fiveHundredPx === true && fourHundredPx === false
-                  ? "12rem"
-                  : fourHundredPx
-                  ? "10rem"
-                  : "15rem",
-              width:
-                fiveHundredPx === true && fourHundredPx === false
-                  ? "24rem"
-                  : fourHundredPx
-                  ? "20rem"
-                  : "30rem",
-              backgroundColor: "white",
-              borderRadius: "1rem",
-            }}
+          <a
+            href="https://github.com/Rodriix99/BrokenOffice-Front"
+            target="_blank"
           >
-            <Typography
-              variant={fourHundredPx ? "h5" : "h4"}
-              sx={{ marginRight: "1rem" }}
+            <div
+              className="glow-on-hover"
+              style={{
+                display: "flex",
+                justifyContent: "end",
+                marginTop: "5rem",
+                alignItems: "end",
+                height:
+                  fiveHundredPx === true && fourHundredPx === false
+                    ? "12rem"
+                    : fourHundredPx
+                    ? "10rem"
+                    : "15rem",
+                width:
+                  fiveHundredPx === true && fourHundredPx === false
+                    ? "24rem"
+                    : fourHundredPx
+                    ? "20rem"
+                    : "30rem",
+                backgroundColor: "white",
+                borderRadius: "1rem",
+              }}
             >
-              Broken Office
-            </Typography>
-          </div>
+              <img
+                src={BrokenOffice}
+                style={{ width: "100%", overflow: "hidden" }}
+              />
+            </div>
+          </a>
         </Grid>
 
         <Grid
@@ -105,36 +115,40 @@ function Projects() {
           md={12}
           lg={6}
         >
-          <div
-            className="glow-on-hover"
-            style={{
-              display: "flex",
-              justifyContent: "end",
-              marginTop: "5rem",
-              alignItems: "end",
-              height:
-                fiveHundredPx === true && fourHundredPx === false
-                  ? "12rem"
-                  : fourHundredPx
-                  ? "10rem"
-                  : "15rem",
-              width:
-                fiveHundredPx === true && fourHundredPx === false
-                  ? "24rem"
-                  : fourHundredPx
-                  ? "20rem"
-                  : "30rem",
-              backgroundColor: "white",
-              borderRadius: "1rem",
-            }}
-          >
-            <Typography
-              variant={fourHundredPx ? "h5" : "h4"}
-              sx={{ marginRight: "1rem" }}
+          <a href="https://github.com/Rodriix99/E-COMMERCE2" target="_blank">
+            <div
+              className="glow-on-hover"
+              style={{
+                display: "flex",
+                justifyContent: "end",
+                marginTop: "5rem",
+                alignItems: "end",
+                height:
+                  fiveHundredPx === true && fourHundredPx === false
+                    ? "12rem"
+                    : fourHundredPx
+                    ? "10rem"
+                    : "15rem",
+                width:
+                  fiveHundredPx === true && fourHundredPx === false
+                    ? "24rem"
+                    : fourHundredPx
+                    ? "20rem"
+                    : "30rem",
+                backgroundColor: "white",
+                borderRadius: "1rem",
+              }}
             >
-              Divino
-            </Typography>
-          </div>
+              <img
+                src={Divino}
+                style={{
+                  width: "110%",
+                  overflow: "hidden",
+                  objectFit: "fill",
+                }}
+              />
+            </div>
+          </a>
         </Grid>
       </Grid>
     </motion.div>
