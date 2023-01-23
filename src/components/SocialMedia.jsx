@@ -1,8 +1,8 @@
 import { useMediaQuery } from "@mui/material";
 import React from "react";
-import gitHubIcon from "../assets/gitHubWhite.png";
-import linkedinWhite from "../assets/linkedinWhite.png";
-import mailCirlceWhite from "../assets/mailCirlceWhite.png";
+import gitHubIcon from "../assets/socialMedia/gitHubWhite.png";
+import linkedinWhite from "../assets/socialMedia/linkedinWhite.png";
+import mailCirlceWhite from "../assets/socialMedia/mailCirlceWhite.png";
 function SocialMedia() {
   const fiveHundredPx = useMediaQuery("(max-width:510px)");
 

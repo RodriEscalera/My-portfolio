@@ -1,9 +1,12 @@
 import React from "react";
 import { useCallback } from "react";
 import Particles from "react-particles";
+import { useSelector } from "react-redux";
 import { loadFull } from "tsparticles";
 
 function ParticlesCustom() {
+  const fx = useSelector((state) => state.fx);
+
   const particlesInit = useCallback(async (engine) => {
     //console.log(engine);
     // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
@@ -324,7 +327,7 @@ function ParticlesCustom() {
                 factor: 1000,
               },
               limit: 0,
-              value: 200,
+              value: fx === "FX ON" ? 150 : 60,
             },
             opacity: {
               random: {

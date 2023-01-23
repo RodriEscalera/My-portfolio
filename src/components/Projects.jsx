@@ -58,7 +58,23 @@ function Projects() {
             >
               <img
                 src={TheMovieBank}
-                style={{ width: "100%", overflow: "hidden" }}
+                style={{
+                  borderRadius: "1rem",
+
+                  height:
+                    fiveHundredPx === true && fourHundredPx === false
+                      ? "12rem"
+                      : fourHundredPx
+                      ? "10rem"
+                      : "15rem",
+                  width:
+                    fiveHundredPx === true && fourHundredPx === false
+                      ? "24rem"
+                      : fourHundredPx
+                      ? "20rem"
+                      : "30rem",
+                  objectFit: "cover",
+                }}
               />
             </div>
           </a>
@@ -101,7 +117,23 @@ function Projects() {
             >
               <img
                 src={BrokenOffice}
-                style={{ width: "100%", overflow: "hidden" }}
+                style={{
+                  borderRadius: "1rem",
+
+                  height:
+                    fiveHundredPx === true && fourHundredPx === false
+                      ? "12rem"
+                      : fourHundredPx
+                      ? "10rem"
+                      : "15rem",
+                  width:
+                    fiveHundredPx === true && fourHundredPx === false
+                      ? "24rem"
+                      : fourHundredPx
+                      ? "20rem"
+                      : "30rem",
+                  objectFit: "cover",
+                }}
               />
             </div>
           </a>
@@ -142,9 +174,21 @@ function Projects() {
               <img
                 src={Divino}
                 style={{
-                  width: "110%",
-                  overflow: "hidden",
-                  objectFit: "fill",
+                  borderRadius: "1rem",
+
+                  height:
+                    fiveHundredPx === true && fourHundredPx === false
+                      ? "12rem"
+                      : fourHundredPx
+                      ? "10rem"
+                      : "15rem",
+                  width:
+                    fiveHundredPx === true && fourHundredPx === false
+                      ? "24rem"
+                      : fourHundredPx
+                      ? "20rem"
+                      : "30rem",
+                  objectFit: "cover",
                 }}
               />
             </div>
