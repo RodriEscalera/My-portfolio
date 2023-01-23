@@ -195,6 +195,7 @@ function Projects() {
           </a>
         </Grid>
       </Grid>
+      <div style={{ height: "2rem" }}></div>
     </motion.div>
   );
 }

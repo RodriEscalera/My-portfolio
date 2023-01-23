@@ -33,7 +33,6 @@ function App() {
           <NavBarMobile appRef={appRef} />
         </>
       )}
-      <div style={{ height: "2rem" }}></div>
     </div>
   );
 }

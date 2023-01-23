@@ -207,6 +207,7 @@ function Contact() {
       <div style={{ height: "4rem" }}></div>
 
       <SocialMedia />
+      <div style={{ height: "2rem" }}></div>
     </motion.div>
   );
 }
