@@ -16,7 +16,7 @@ function Options() {
   return (
     <motion.div
       animate={{
-        left: mobileNav ? 0 : -170,
+        left: !mobileNav ? -190 : 0,
       }}
       style={{
         flexDirection: "column",
@@ -39,6 +39,7 @@ function Options() {
             alignItems: "center",
             borderRadius: "2rem",
             marginTop: "1.7rem",
+            border: "0.3rem solid #19bc8b",
           }}
         >
           <h2>{language.language === "ENGLISH" ? "HOME" : "INICIO"}</h2>
@@ -57,6 +58,7 @@ function Options() {
             borderRadius: "2rem",
             marginTop: "1.7rem",
             padding: "0rem 1.8rem",
+            border: "0.3rem solid #19bc8b",
           }}
         >
           <h2>{language.language === "ENGLISH" ? "ABOUT ME" : "SOBRE MÍ"}</h2>
@@ -71,12 +73,12 @@ function Options() {
             backgroundColor: "white",
             height: "3rem",
             padding: "0rem 1.8rem",
-
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
             borderRadius: "2rem",
             marginTop: "1.7rem",
+            border: "0.3rem solid #19bc8b",
           }}
         >
           <h2>{language.language === "ENGLISH" ? "PROJECTS" : "PROJECTOS"}</h2>
@@ -96,6 +98,7 @@ function Options() {
             alignItems: "center",
             borderRadius: "2rem",
             marginTop: "1.7rem",
+            border: "0.3rem solid #19bc8b",
           }}
         >
           <h2>{language.language === "ENGLISH" ? "CONTACT" : "CONTACTO"}</h2>
