@@ -23,7 +23,7 @@ function NavBarMobile({ appRef }) {
       style={{
         display: "flex",
         justifyContent: "end",
-        alignItems: "center",
+        alignItems: "start",
       }}
     >
       <motion.div

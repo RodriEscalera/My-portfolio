@@ -26,13 +26,9 @@ function App() {
       <NavBar />
       <div style={{ height: "4rem" }}></div>
       <ParticlesCustom />
+      {isActive && <NavBarMobile appRef={appRef} />}
       <AnimatedRoutes />
       <Options />
-      {isActive && (
-        <>
-          <NavBarMobile appRef={appRef} />
-        </>
-      )}
     </div>
   );
 }
