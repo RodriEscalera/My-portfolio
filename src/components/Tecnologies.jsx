@@ -18,6 +18,7 @@ function Tecnologies() {
     <div
       style={{
         width: "100vw",
+
         display: "flex",
         justifyContent: "center",
         flexWrap: "wrap",

@@ -3,18 +3,31 @@ import { Typography, useMediaQuery } from "@mui/material";
 import { motion } from "framer-motion";
 import { useSelector } from "react-redux";
 import Tecnologies from "./Tecnologies";
+import { useState } from "react";
 function Home() {
   const language = useSelector((state) => state.language);
-
   const isActive = useMediaQuery("(max-width: 910px)");
   const fixResolution = useMediaQuery("(max-width: 376px)");
-  // console.log(isActive);
-  console.log(fixResolution);
+  const query = useMediaQuery("(max-width: 647px)");
+
   return (
-    <>
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
+      <div
+        style={{
+          height: query ? "40rem" : "0",
+          marginTop: query ? "0" : "30rem",
+        }}
+      ></div>
+
       <motion.div
         initial={{ opacity: 0.5, scale: 4 }}
-        animate={{ opacity: 1, scale: 1 }}
+        animate={{ opacity: 1, scale: 0.8 }}
         transition={{
           duration: 0.7,
           ease: [0, 0.71, 0.2, 1.01],
@@ -28,12 +41,10 @@ function Home() {
           },
         }}
         style={{
-          display: "flex",
-          justifyContent: "center",
-          height: "100vh",
-          alignItems: "center",
           flexDirection: "column",
           overflowX: "hidden",
+          overflowY: "hidden",
+          position: "absolute",
         }}
       >
         <Typography
@@ -57,7 +68,7 @@ function Home() {
 
         <Tecnologies />
       </motion.div>
-    </>
+    </div>
   );
 }
 
