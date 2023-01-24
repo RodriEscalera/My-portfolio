@@ -3,12 +3,22 @@ import React, { useState } from "react";
 import { useSelector } from "react-redux";
 import picture from "../assets/picture.png";
 import { Grid } from "@mui/material";
-import { Tooltip } from "@mui/material";
+import { Tooltip } from "antd";
+
 import { motion } from "framer-motion";
+import AnimatedText from "./AnimatedText";
 function AboutMe() {
   const language = useSelector((state) => state.language);
   const isActive = useMediaQuery("(max-width:899px)");
   const sixHundredPx = useMediaQuery("(min-width:600px)");
+  const fiveHundredPx = useMediaQuery("(max-width:510px)");
+
+  const [event, setEvent] = useState(false);
+
+  const handleHover = () => {
+    setEvent(!event);
+  };
+  console.log(fiveHundredPx);
   return (
     <>
       <motion.div
@@ -42,10 +52,11 @@ function AboutMe() {
               alignItems: "center",
               justifyContent: "center",
               display: "flex",
+              flexDirection: "column",
             }}
           >
             <Tooltip
-              arrow
+              color="#19bc8b"
               placement="top"
               title={
                 language.language === "ENGLISH" ? "Download CV" : "Descargar CV"
@@ -54,11 +65,13 @@ function AboutMe() {
               <a
                 href={
                   language.language === "ENGLISH"
-                    ? "https://download946.mediafire.com/jssizmcw04tg/kdd5w7qdkysy4pb/RODRIGO+ESCALERA+CV+EN.pdf"
-                    : "https://download1346.mediafire.com/ii82r8iz6uog/2zh8byaoslpne9v/RODRIGO+ESCALERA+CV+ES.pdf"
+                    ? "../RODRIGO ESCALERA CV EN.pdf"
+                    : "../RODRIGO ESCALERA CV ES.pdf"
                 }
               >
                 <img
+                  onMouseOver={handleHover}
+                  onMouseLeave={handleHover}
                   style={{
                     width: "20rem",
                     height: "20rem",
@@ -70,6 +83,15 @@ function AboutMe() {
                 />
               </a>
             </Tooltip>
+            <AnimatedText
+              text={
+                language.language === "ENGLISH"
+                  ? "Click my picture to download my CV"
+                  : "Presiona mi foto para descargar mi CV"
+              }
+              event={event}
+              size={fiveHundredPx ? "1.2rem" : "2rem"}
+            />
           </Grid>
 
           <Grid
@@ -92,76 +114,37 @@ function AboutMe() {
                   }
             }
           >
-            {isActive === true ? (
-              <div
-                style={{
-                  display: "flex",
-                  justifyContent: "center",
-                  flexDirection: "column",
-                  textAlign: "center",
-                  width: sixHundredPx ? "30rem" : "20rem",
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                flexDirection: "column",
+                textAlign: "center",
+                width: sixHundredPx ? "30rem" : "20rem",
+              }}
+            >
+              <Typography
+                variant="h2"
+                sx={{
+                  color: "white",
+                  marginTop: "2rem",
+                  display: "block",
                 }}
               >
-                <Typography
-                  variant="h2"
-                  sx={{
-                    color: "white",
-                    marginTop: "2rem",
-                    display: "block",
-                  }}
-                >
-                  {language.language === "ENGLISH" ? "ABOUT ME" : "SOBRE MÍ"}
-                </Typography>
-                <Typography
-                  variant="p"
-                  sx={{
-                    color: "white",
-                    marginTop: "2rem",
-                  }}
-                >
-                  {language.language === "ENGLISH"
-                    ? "Hi! i'm Rodrigo Escalera, a full-stack javascript developer from Salta Argentina. When I finished high school, I discovered programming as a way to do what I like the most, which is to solve problems, applying ingenuity and logic. I trained in the coding bootcamp of plataforma 5, learning PERN and MERN stack, scrum methodology and improving my soft skills. So I can say that enrolling in a coding bootcamp was my best decision. I always look for the opportunity to contribute to the development of projects, both on the technical side and on the social side."
-                    : "Soy Rodrigo Escalera, un desarrollador full-stack javascript de Salta, Argentina. Cuando terminé el secundario, descubrí la programación como una forma de hacer lo que más me gusta, que es resolver problemas, aplicando ingenio y lógica. Me formé en el coding bootcamp de plataforma 5, aprendiendo el stack PERN y MERN, la metodología scrum y mejorando mis habilidades blandas. Así que puedo decir que inscribirme en un coding bootcamp fue mi mejor decisión. Siempre busco la oportunidad de contribuir al desarrollo de proyectos, tanto en el aspecto técnico como en el social."}
-                </Typography>
-              </div>
-            ) : (
-              <>
-                <div
-                  style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    flexDirection: "column",
-                    textAlign: "center",
-                    width: sixHundredPx ? "30rem" : "20rem",
-                  }}
-                >
-                  <Typography
-                    variant="h2"
-                    sx={{
-                      color: "white",
-                      marginTop: "2rem",
-                      textAlign: "center",
-                      display: "block",
-                    }}
-                  >
-                    {language.language === "ENGLISH" ? "ABOUT ME" : "SOBRE MÍ"}
-                  </Typography>
-                  <Typography
-                    variant="p"
-                    sx={{
-                      color: "white",
-                      marginTop: "1rem",
-                      textAlign: "center",
-                      width: "30rem",
-                    }}
-                  >
-                    {language.language === "ENGLISH"
-                      ? "Hi! i'm Rodrigo Escalera, a full-stack javascript developer from Salta Argentina. When I finished high school, I discovered programming as a way to do what I like the most, which is to solve problems, applying ingenuity and logic. I trained in the coding bootcamp of plataforma 5, learning PERN and MERN stack, scrum methodology and improving my soft skills. So I can say that enrolling in a coding bootcamp was my best decision. I always look for the opportunity to contribute to the development of projects, both on the technical side and on the social side."
-                      : "Soy Rodrigo Escalera, un desarrollador full-stack javascript de Salta, Argentina. Cuando terminé el secundario, descubrí la programación como una forma de hacer lo que más me gusta, que es resolver problemas, aplicando ingenio y lógica. Me formé en el coding bootcamp de plataforma 5, aprendiendo el stack PERN y MERN, la metodología scrum y mejorando mis habilidades blandas. Así que puedo decir que inscribirme en un coding bootcamp fue mi mejor decisión. Siempre busco la oportunidad de contribuir al desarrollo de proyectos, tanto en el aspecto técnico como en el social."}
-                  </Typography>
-                </div>
-              </>
-            )}
+                {language.language === "ENGLISH" ? "ABOUT ME" : "SOBRE MÍ"}
+              </Typography>
+              <Typography
+                variant="p"
+                sx={{
+                  color: "white",
+                  marginTop: "2rem",
+                }}
+              >
+                {language.language === "ENGLISH"
+                  ? "Hi! i'm Rodrigo Escalera, a full-stack javascript developer from Salta Argentina. When I finished high school, I discovered programming as a way to do what I like the most, which is to solve problems, applying ingenuity and logic. I trained in the coding bootcamp of plataforma 5, learning PERN and MERN stack, scrum methodology and improving my soft skills. So I can say that enrolling in a coding bootcamp was my best decision. I always look for the opportunity to contribute to the development of projects, both on the technical side and on the social side."
+                  : "Soy Rodrigo Escalera, un desarrollador full-stack javascript de Salta, Argentina. Cuando terminé el secundario, descubrí la programación como una forma de hacer lo que más me gusta, que es resolver problemas, aplicando ingenio y lógica. Me formé en el coding bootcamp de plataforma 5, aprendiendo el stack PERN y MERN, la metodología scrum y mejorando mis habilidades blandas. Así que puedo decir que inscribirme en un coding bootcamp fue mi mejor decisión. Siempre busco la oportunidad de contribuir al desarrollo de proyectos, tanto en el aspecto técnico como en el social."}
+              </Typography>
+            </div>
           </Grid>
         </Grid>
       </motion.div>

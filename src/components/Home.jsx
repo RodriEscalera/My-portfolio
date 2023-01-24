@@ -3,11 +3,8 @@ import { Typography, useMediaQuery } from "@mui/material";
 import { motion } from "framer-motion";
 import { useSelector } from "react-redux";
 import Tecnologies from "./Tecnologies";
-import { useState } from "react";
 function Home() {
-  const language = useSelector((state) => state.language);
   const isActive = useMediaQuery("(max-width: 910px)");
-  const fixResolution = useMediaQuery("(max-width: 376px)");
   const query = useMediaQuery("(max-width: 647px)");
 
   return (
