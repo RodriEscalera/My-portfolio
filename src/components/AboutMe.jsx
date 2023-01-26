@@ -78,7 +78,7 @@ function AboutMe() {
                     borderRadius: "50rem",
                     marginTop: "0.2rem",
                   }}
-                  src={picture}
+                  src="https://i.im.ge/2023/01/26/svzZlr.picture.png"
                   alt="me"
                 />
               </a>

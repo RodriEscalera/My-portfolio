@@ -1,16 +1,5 @@
 import React from "react";
-import javascript from "../assets/tecnologies/javascript.png";
-import css from "../assets/tecnologies/css.png";
-import html from "../assets/tecnologies/html.png";
-import jwt from "../assets/tecnologies/jwt.png";
-import materialui from "../assets/tecnologies/materialui.png";
-import git from "../assets/tecnologies/git.png";
-import psql from "../assets/tecnologies/psql.png";
-import react from "../assets/tecnologies/React.png";
-import redux from "../assets/tecnologies/redux.png";
-import firebase from "../assets/tecnologies/firebase.png";
-import sequelize from "../assets/tecnologies/sequelize.png";
-import nodejs from "../assets/tecnologies/nodejs.png";
+
 import styleTech from "../styles/Tecnologies.module.css";
 import { Tooltip } from "antd";
 function Tecnologies() {
@@ -31,14 +20,26 @@ function Tecnologies() {
         color="#19bc8b"
         mouseEnterDelay={0}
       >
-        <img className={styleTech.icon} style={styleImg} src={javascript} />
+        <img
+          className={styleTech.icon}
+          style={styleImg}
+          src="https://i.im.ge/2023/01/26/svfo7p.javascript.png"
+        />
       </Tooltip>
       <Tooltip placement="top" title="HTML" color="#19bc8b" mouseEnterDelay={0}>
-        <img className={styleTech.icon} style={styleImg} src={html} />
+        <img
+          className={styleTech.icon}
+          style={styleImg}
+          src="https://i.im.ge/2023/01/26/svfQeq.html.png"
+        />
       </Tooltip>
 
       <Tooltip placement="top" title="CSS" color="#19bc8b" mouseEnterDelay={0}>
-        <img className={styleTech.icon} style={styleImg} src={css} />
+        <img
+          className={styleTech.icon}
+          style={styleImg}
+          src="https://i.im.ge/2023/01/26/svfMcC.css.png"
+        />
       </Tooltip>
       <Tooltip
         placement="top"
@@ -46,7 +47,11 @@ function Tecnologies() {
         color="#19bc8b"
         mouseEnterDelay={0}
       >
-        <img className={styleTech.icon} style={styleImg} src={react} />
+        <img
+          className={styleTech.icon}
+          style={styleImg}
+          src="https://i.im.ge/2023/01/26/svfdgT.React.png"
+        />
       </Tooltip>
       <Tooltip
         placement="top"
@@ -54,7 +59,11 @@ function Tecnologies() {
         color="#19bc8b"
         mouseEnterDelay={0}
       >
-        <img className={styleTech.icon} style={styleImg} src={redux} />
+        <img
+          className={styleTech.icon}
+          style={styleImg}
+          src="https://i.im.ge/2023/01/26/svf7CG.redux.png"
+        />
       </Tooltip>
       <Tooltip
         placement="top"
@@ -62,7 +71,11 @@ function Tecnologies() {
         color="#19bc8b"
         mouseEnterDelay={0}
       >
-        <img className={styleTech.icon} style={styleImg} src={materialui} />
+        <img
+          className={styleTech.icon}
+          style={styleImg}
+          src="https://i.im.ge/2023/01/26/svfOVr.materialui.png"
+        />
       </Tooltip>
       <Tooltip
         placement="top"
@@ -70,7 +83,11 @@ function Tecnologies() {
         color="#19bc8b"
         mouseEnterDelay={0}
       >
-        <img className={styleTech.icon} style={styleImg} src={psql} />
+        <img
+          className={styleTech.icon}
+          style={styleImg}
+          src="https://i.im.ge/2023/01/26/svfS00.psql.png"
+        />
       </Tooltip>
       <Tooltip
         placement="top"
@@ -78,7 +95,11 @@ function Tecnologies() {
         color="#19bc8b"
         mouseEnterDelay={0}
       >
-        <img className={styleTech.icon} style={styleImg} src={sequelize} />
+        <img
+          className={styleTech.icon}
+          style={styleImg}
+          src="https://i.im.ge/2023/01/26/svfLSa.sequelize.png"
+        />
       </Tooltip>
       <Tooltip
         placement="top"
@@ -86,7 +107,11 @@ function Tecnologies() {
         color="#19bc8b"
         mouseEnterDelay={0}
       >
-        <img className={styleTech.icon} style={styleImg} src={nodejs} />
+        <img
+          className={styleTech.icon}
+          style={styleImg}
+          src="https://i.im.ge/2023/01/26/svf2lW.nodejs.png"
+        />
       </Tooltip>
       <Tooltip
         placement="top"
@@ -94,7 +119,11 @@ function Tecnologies() {
         color="#19bc8b"
         mouseEnterDelay={0}
       >
-        <img className={styleTech.icon} style={styleImg} src={firebase} />
+        <img
+          className={styleTech.icon}
+          style={styleImg}
+          src="https://i.im.ge/2023/01/26/svfXCP.firebase.png"
+        />
       </Tooltip>
       <Tooltip
         placement="top"
@@ -102,10 +131,18 @@ function Tecnologies() {
         color="#19bc8b"
         mouseEnterDelay={0}
       >
-        <img className={styleTech.icon} style={styleImg} src={jwt} />
+        <img
+          className={styleTech.icon}
+          style={styleImg}
+          src="https://i.im.ge/2023/01/26/svfF6m.jwt.png"
+        />
       </Tooltip>
       <Tooltip placement="top" title="Git" color="#19bc8b" mouseEnterDelay={0}>
-        <img className={styleTech.icon} style={styleImg} src={git} />
+        <img
+          className={styleTech.icon}
+          style={styleImg}
+          src="https://i.im.ge/2023/01/26/svVei4.git.png"
+        />
       </Tooltip>
     </div>
   );

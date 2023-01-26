@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import TheMovieBank from "../projects pics/TheMovieBank.png";
 import BrokenOffice from "../projects pics/BrokenOffice.png";
 import Divino from "../projects pics/Divino.PNG";
+import { Link } from "react-router-dom";
 
 function Projects() {
   const fiveHundredPx = useMediaQuery("(max-width:550px)");
@@ -29,10 +30,7 @@ function Projects() {
           md={12}
           lg={6}
         >
-          <a
-            href="https://github.com/Rodriix99/THE-MOVIE-BANK-FRONT"
-            target="_blank"
-          >
+          <Link to="/projects/theMovieBank">
             <div
               className="glow-on-hover"
               style={{
@@ -77,7 +75,7 @@ function Projects() {
                 }}
               />
             </div>
-          </a>
+          </Link>
         </Grid>
 
         <Grid
@@ -88,10 +86,7 @@ function Projects() {
           md={12}
           lg={6}
         >
-          <a
-            href="https://github.com/Rodriix99/BrokenOffice-Front"
-            target="_blank"
-          >
+          <Link to="/projects/brokenOffice">
             <div
               className="glow-on-hover"
               style={{
@@ -136,7 +131,7 @@ function Projects() {
                 }}
               />
             </div>
-          </a>
+          </Link>
         </Grid>
 
         <Grid
@@ -147,7 +142,7 @@ function Projects() {
           md={12}
           lg={6}
         >
-          <a href="https://github.com/Rodriix99/E-COMMERCE2" target="_blank">
+          <Link to="/projects/divino">
             <div
               className="glow-on-hover"
               style={{
@@ -192,7 +187,7 @@ function Projects() {
                 }}
               />
             </div>
-          </a>
+          </Link>
         </Grid>
       </Grid>
       <div style={{ height: "2rem" }}></div>
